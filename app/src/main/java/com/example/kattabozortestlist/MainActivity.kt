@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.kattabozortestlist.ui.OffersFragment
+import com.example.kattabozortestlist.ui.ProductsFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
       mFragmentManager = supportFragmentManager
       mFragmentTransaction = mFragmentManager?.beginTransaction()
-      mFragmentTransaction?.replace(R.id.container, OffersFragment())
+      mFragmentTransaction?.replace(R.id.container, ProductsFragment())
       mFragmentTransaction?.commit()
    }
 

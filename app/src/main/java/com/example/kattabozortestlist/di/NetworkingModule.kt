@@ -31,7 +31,7 @@ object NetworkingModule {
 
    @Provides
    @Singleton
-   fun provideKattaBozorApi(retrofit: Retrofit): KattaBozorApi {
-      return retrofit.create(KattaBozorApi::class.java)
-   }
+   fun provideKattaBozorApi(retrofit: Retrofit): KattaBozorApi =
+     retrofit.create(KattaBozorApi::class.java)
+
 }

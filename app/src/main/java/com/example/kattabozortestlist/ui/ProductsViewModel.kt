@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class OffersViewModel @Inject constructor(
+class ProductsViewModel @Inject constructor(
    private val offersRepository: Repository
 ) : ViewModel() {
    private val _offers = MutableLiveData<List<ProductEntity>>(listOf())
