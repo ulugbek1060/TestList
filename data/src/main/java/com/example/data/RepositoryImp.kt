@@ -1,7 +1,7 @@
 package com.example.data
 
 import com.example.data.models.ProductEntity
-import com.example.data.source.KattaBozorApi
+import com.example.remote.KattaBozorApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -11,8 +11,6 @@ import javax.inject.Inject
 class RepositoryImp @Inject constructor(
    private val kattaBozorApi: KattaBozorApi
 ) : Repository {
-
-   private val TAG = this.javaClass.simpleName;
 
    override fun getOffers(): Flow<List<ProductEntity>> = flow {
 

@@ -1,6 +1,6 @@
 package com.example.kattabozortestlist.di
 
-import com.example.data.source.KattaBozorApi
+import com.example.remote.KattaBozorApi
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module

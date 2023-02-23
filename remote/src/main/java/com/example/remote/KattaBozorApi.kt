@@ -1,6 +1,6 @@
-package com.example.data.source
+package com.example.remote
 
-import com.example.data.source.models.ProductsResponse
+import com.example.remote.models.ProductsResponse
 import retrofit2.http.GET
 
 interface KattaBozorApi {

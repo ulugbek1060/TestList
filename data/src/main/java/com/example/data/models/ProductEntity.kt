@@ -1,6 +1,6 @@
 package com.example.data.models
 
-import com.example.data.source.models.Offer
+import com.example.remote.models.Offer
 
 data class ProductEntity(
    val attributes: List<AttributeItem>,
@@ -12,7 +12,7 @@ data class ProductEntity(
    val name: String
 ) {
    companion object {
-      fun map(offer: Offer): ProductEntity {
+      fun map(offer: com.example.remote.models.Offer): ProductEntity {
          return ProductEntity(
             attributes = offer.attributes.map { AttributeItem(name = it.name, value = it.value) },
             brand = offer.brand,
