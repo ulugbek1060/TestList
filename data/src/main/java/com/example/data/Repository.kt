@@ -6,8 +6,8 @@ import kotlinx.coroutines.flow.Flow
 interface Repository {
 
    /**
-   fetch offers without args any
-   returns [OffersResponse]
+   fetch offers without any args
+   returns [ProductEntity] as List
     */
    fun getOffers(): Flow<List<ProductEntity>>
 }
